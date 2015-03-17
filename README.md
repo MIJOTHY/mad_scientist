@@ -12,7 +12,11 @@ OR ALTERNATIVELY if you want to do it yourself:
 ```js
 npm init --> test: "./node_modules/lab/bin/lab -c -v" // (optional as we run tests with gulp)
 ```
--c gives us coverage, -v gives us verbose output.
+-c gives us coverage, -v gives us verbose output. Add a -l flag if you don't want global variable leak warnings.
+If npm test doesnt work like this, try the following alternative setup:
+```js
+npm init --> test: "lab -c -v" // (again, optional as we run tests with gulp)
+```
 
 ```js
 npm install lab -g                                // Install lab globally
