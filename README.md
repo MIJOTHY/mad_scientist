@@ -13,7 +13,7 @@ OR ALTERNATIVELY if you want to do it yourself:
 npm init --> test: "./node_modules/lab/bin/lab -c -v" // (optional as we run tests with gulp)
 ```
 -c gives us coverage, -v gives us verbose output. Add a -l flag if you don't want global variable leak warnings.
-If npm test doesnt work like this, try the following alternative setup:
+If npm test doesnt work like this, try changing the test line in your package.json to the following:
 ```js
 npm init --> test: "lab -c -v" // (again, optional as we run tests with gulp)
 ```
